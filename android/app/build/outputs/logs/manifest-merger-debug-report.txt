@@ -15,6 +15,7 @@ MERGED from [:react-native-safe-area-context] C:\Users\tally\Documents\WORK\uniR
 MERGED from [:react-native-screens] C:\Users\tally\Documents\WORK\uniRestoCafe\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-svg] C:\Users\tally\Documents\WORK\uniRestoCafe\node_modules\react-native-svg\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-vector-icons] C:\Users\tally\Documents\WORK\uniRestoCafe\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:realm] C:\Users\tally\Documents\WORK\uniRestoCafe\node_modules\realm\react-native\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.70.3] C:\Users\tally\.gradle\caches\transforms-3\58f5f1fac1cdc659e621eaaf42d224b6\transformed\jetified-react-native-0.70.3-debug\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\tally\.gradle\caches\transforms-3\4aa3daa4c119e5ebf154ad11d072f485\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.facebook.react:hermes-engine:0.70.3] C:\Users\tally\.gradle\caches\transforms-3\a5d296e35f243bb86fca7b74a74a75be\transformed\jetified-hermes-engine-0.70.3-debug\AndroidManifest.xml:2:1-9:12
@@ -107,6 +108,8 @@ application
 ADDED from C:\Users\tally\Documents\WORK\uniRestoCafe\android\app\src\main\AndroidManifest.xml:6:5-25:19
 MERGED from C:\Users\tally\Documents\WORK\uniRestoCafe\android\app\src\main\AndroidManifest.xml:6:5-25:19
 MERGED from C:\Users\tally\Documents\WORK\uniRestoCafe\android\app\src\main\AndroidManifest.xml:6:5-25:19
+MERGED from [:realm] C:\Users\tally\Documents\WORK\uniRestoCafe\node_modules\realm\react-native\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-20
+MERGED from [:realm] C:\Users\tally\Documents\WORK\uniRestoCafe\node_modules\realm\react-native\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-20
 MERGED from [com.facebook.react:react-native:0.70.3] C:\Users\tally\.gradle\caches\transforms-3\58f5f1fac1cdc659e621eaaf42d224b6\transformed\jetified-react-native-0.70.3-debug\AndroidManifest.xml:9:5-20
 MERGED from [com.facebook.react:react-native:0.70.3] C:\Users\tally\.gradle\caches\transforms-3\58f5f1fac1cdc659e621eaaf42d224b6\transformed\jetified-react-native-0.70.3-debug\AndroidManifest.xml:9:5-20
 MERGED from [com.facebook.soloader:soloader:0.10.4] C:\Users\tally\.gradle\caches\transforms-3\87826452408345e9fcde9828ee0fb34c\transformed\jetified-soloader-0.10.4\AndroidManifest.xml:11:5-20
@@ -199,6 +202,8 @@ MERGED from [:react-native-svg] C:\Users\tally\Documents\WORK\uniRestoCafe\node_
 MERGED from [:react-native-svg] C:\Users\tally\Documents\WORK\uniRestoCafe\node_modules\react-native-svg\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-vector-icons] C:\Users\tally\Documents\WORK\uniRestoCafe\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-vector-icons] C:\Users\tally\Documents\WORK\uniRestoCafe\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:realm] C:\Users\tally\Documents\WORK\uniRestoCafe\node_modules\realm\react-native\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:realm] C:\Users\tally\Documents\WORK\uniRestoCafe\node_modules\realm\react-native\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:react-native:0.70.3] C:\Users\tally\.gradle\caches\transforms-3\58f5f1fac1cdc659e621eaaf42d224b6\transformed\jetified-react-native-0.70.3-debug\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:react-native:0.70.3] C:\Users\tally\.gradle\caches\transforms-3\58f5f1fac1cdc659e621eaaf42d224b6\transformed\jetified-react-native-0.70.3-debug\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\tally\.gradle\caches\transforms-3\4aa3daa4c119e5ebf154ad11d072f485\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44

@@ -38,3 +38,4 @@ com.unirestocafe.app-packaged_res-36 C:\Users\tally\Documents\WORK\uniRestoCafe\
 com.unirestocafe.app-packaged_res-37 C:\Users\tally\Documents\WORK\uniRestoCafe\node_modules\react-native-screens\android\build\intermediates\packaged_res\debug
 com.unirestocafe.app-packaged_res-38 C:\Users\tally\Documents\WORK\uniRestoCafe\node_modules\react-native-svg\android\build\intermediates\packaged_res\debug
 com.unirestocafe.app-packaged_res-39 C:\Users\tally\Documents\WORK\uniRestoCafe\node_modules\react-native-vector-icons\android\build\intermediates\packaged_res\debug
+com.unirestocafe.app-packaged_res-40 C:\Users\tally\Documents\WORK\uniRestoCafe\node_modules\realm\react-native\android\build\intermediates\packaged_res\debug
