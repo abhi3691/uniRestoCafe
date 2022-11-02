@@ -100,7 +100,6 @@ class TableScrollList extends Component {
             extendedState={{state: activeIndex}}
           />
         )}
-        <Divider style={styles.border} />
       </View>
     );
   }

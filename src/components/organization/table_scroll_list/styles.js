@@ -21,11 +21,6 @@ const styles = StyleSheet.create({
     bottom: -10,
     borderRadius: 30,
   },
-  border: {
-    height: ScreenRatio.width / 200,
-    backgroundColor: customColor.white,
-    elevation: 4,
-  },
 });
 
 export default styles;

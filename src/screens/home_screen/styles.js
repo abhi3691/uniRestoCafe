@@ -12,6 +12,7 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     height: ScreenRatio.height,
     backgroundColor: customColor.white,
+    elevation: 4,
   },
 });
 
