@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import {DataProvider, LayoutProvider, RecyclerListView} from 'recyclerlistview';
 import ScreenRatio from '../../../global_functions/screen_ratio/ScreenRatio';
 import styles from './styles';
-import {Divider} from 'react-native-paper';
+import SingleTab from '../../molecules/single_tab/SingleTab';
 class TableScrollList extends Component {
   constructor(props) {
     super(props);
@@ -73,15 +73,12 @@ class TableScrollList extends Component {
       category_dishes,
     } = data.item;
     return (
-      <TouchableHighlight
-        underlayColor="transparent"
-        style={styles.itme}
-        onPress={() => this.changeCategry(index)}>
-        <View style={styles.itemContainer}>
-          <Text>{menu_category}</Text>
-          {this.state.activeIndex == index && <View style={styles.bar} />}
-        </View>
-      </TouchableHighlight>
+      <SingleTab
+        activeIndex={this.state.activeIndex}
+        index={index}
+        menu_category={menu_category}
+        onPress={() => this.changeCategry(index)}
+      />
     );
   };
   //ui

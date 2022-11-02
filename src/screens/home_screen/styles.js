@@ -6,11 +6,10 @@ const styles = StyleSheet.create({
   container: {
     height: ScreenRatio.height,
     width: ScreenRatio.width,
-    backgroundColor: customColor.white,
+    backgroundColor: customColor.ligthWihte,
   },
   top: {
-    flexGrow: 1,
-    height: ScreenRatio.height,
+    height: ScreenRatio.height / 9,
     backgroundColor: customColor.white,
     elevation: 4,
   },

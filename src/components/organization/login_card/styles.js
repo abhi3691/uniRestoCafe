@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 import FontRatio from '../../../global_functions/font_ratio/FontRatio';
 import customColor from '../../../theme/Color';
 
@@ -14,6 +14,12 @@ const styles = StyleSheet.create({
     fontSize: FontRatio(30),
     color: customColor.red,
     margin: 10,
+  },
+  inputDark: {
+    backgroundColor: customColor.white,
+  },
+  inputWhite: {
+    backgroundColor: customColor.black,
   },
 });
 

@@ -1,10 +1,10 @@
-import {View, Text} from 'react-native';
-import React, {memo} from 'react';
-import {useNavigation} from '@react-navigation/native';
+import { View, Text, useColorScheme } from 'react-native';
+import React, { memo } from 'react';
+import { useNavigation } from '@react-navigation/native';
 import * as Animatable from 'react-native-animatable';
 import LoginButton from '../../atom/login_button/LoginButton';
 import styles from './styles';
-import {HelperText, TextInput} from 'react-native-paper';
+import { HelperText, TextInput } from 'react-native-paper';
 import customColor from '../../../theme/Color';
 import ToastMessage from '../../../global_functions/toast_message/ToastMessage';
 import CreateLogin from '../../../database/relam/schema/login_schema/LoginSchema';
@@ -22,6 +22,7 @@ const LoginCard = () => {
 
   //hooks
   const navigation = useNavigation();
+  const colorScheme = useColorScheme();
 
   //zstand
   const setIsLogiedIn = useIsLogedIn(state => state.setIsLogiedIn);
@@ -76,13 +77,26 @@ const LoginCard = () => {
   //Ui
 
   return (
-    <Animatable.View animation="zoomIn" style={styles.container}>
+    <Animatable.View
+      animation="zoomIn"
+      style={[
+        styles.container,
+        {
+          backgroundColor:
+            colorScheme == 'dark' ? customColor.black : customColor.white,
+        },
+      ]}
+    >
       <Text style={styles.title}>Welcome</Text>
       <TextInput
         label="UserName"
         mode="outlined"
         value={userName}
         outlineColor={customColor.red}
+        textColor={
+          colorScheme == 'dark' ? customColor.white : customColor.black
+        }
+        style={colorScheme == 'dark' ? styles.inputWhite : styles.inputDark}
         activeOutlineColor={customColor.red}
         onChangeText={text => changeUserName(text)}
       />
@@ -96,7 +110,11 @@ const LoginCard = () => {
         mode="outlined"
         value={password}
         secureTextEntry={true}
+        textColor={
+          colorScheme == 'dark' ? customColor.white : customColor.black
+        }
         outlineColor={customColor.red}
+        style={colorScheme == 'dark' ? styles.inputWhite : styles.inputDark}
         activeOutlineColor={customColor.red}
         onChangeText={text => changePassword(text)}
       />

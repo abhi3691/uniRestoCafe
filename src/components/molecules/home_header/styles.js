@@ -7,13 +7,13 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     alignItems: 'center',
-    height: ScreenRatio.height / 12,
+    height: ScreenRatio.height / 15.5,
     justifyContent: 'space-between',
     paddingHorizontal: 10,
   },
   label: {
     fontSize: FontRatio(14),
-    color: customColor.black,
+    color: customColor.gray500,
     marginLeft: 10,
   },
   leftContainer: {
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
   },
   orderText: {
     fontSize: FontRatio(10),
-    color: customColor.black,
+    color: customColor.gray500,
   },
   cart: {
     height: ScreenRatio.height / 10,
@@ -45,8 +45,8 @@ const styles = StyleSheet.create({
     borderRadius: ScreenRatio.width / 30,
     position: 'absolute',
     zIndex: 1,
-    left: 30,
-    top: 22,
+    left: 28,
+    top: 30,
     alignItems: 'center',
     justifyContent: 'center',
   },
