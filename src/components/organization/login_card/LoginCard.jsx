@@ -90,6 +90,9 @@ const LoginCard = () => {
         mode="outlined"
         value={userName}
         outlineColor={customColor.red}
+        textColor={
+          colorScheme == 'dark' ? customColor.white : customColor.black
+        }
         style={colorScheme == 'dark' ? styles.inputWhite : styles.inputDark}
         activeOutlineColor={customColor.red}
         onChangeText={text => changeUserName(text)}
@@ -104,6 +107,9 @@ const LoginCard = () => {
         mode="outlined"
         value={password}
         secureTextEntry={true}
+        textColor={
+          colorScheme == 'dark' ? customColor.white : customColor.black
+        }
         outlineColor={customColor.red}
         style={colorScheme == 'dark' ? styles.inputWhite : styles.inputDark}
         activeOutlineColor={customColor.red}
