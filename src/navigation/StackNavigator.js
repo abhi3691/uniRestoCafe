@@ -7,7 +7,6 @@ import LoginScreen from '../screens/login_screen/LoginScreen';
 import SplashScreen from '../screens/splash_screen/SplashScreen';
 import useIsLogedIn from '../zustand/login_State/useIsLogedIn';
 import useLoginData from '../zustand/login_State/useLoginState';
-import useLoginState from '../zustand/login_State/useLoginState';
 
 const Stack = createStackNavigator();
 const StackNavigator = () => {
