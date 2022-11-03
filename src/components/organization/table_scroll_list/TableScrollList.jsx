@@ -77,6 +77,7 @@ class TableScrollList extends Component {
         activeIndex={this.state.activeIndex}
         index={index}
         menu_category={menu_category}
+        data={data.item}
         onPress={() => this.changeCategry(index)}
       />
     );

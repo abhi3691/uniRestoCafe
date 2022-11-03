@@ -5,6 +5,8 @@ import styles from './styles';
 import HomeHeader from '../../components/molecules/home_header/HomeHeader';
 import SplashScreen from '../splash_screen/SplashScreen';
 import TabScroll from '../../components/template/tab_scroll/TabScroll';
+import useScrollData from '../../zustand/scrollData/useScrollData';
+import CartList from '../../components/template/cart_list/CartList';
 
 const HomeScreen = () => {
   //hooks
@@ -12,6 +14,9 @@ const HomeScreen = () => {
 
   //state
   const [loadData, setLoadData] = React.useState(false);
+
+  //zstand
+  const scrolldata = useScrollData(state => state.scrolldata);
 
   //rendring
   React.useEffect(() => {
@@ -34,6 +39,7 @@ const HomeScreen = () => {
       <View style={styles.top}>
         <HomeHeader label={data[0]?.restaurant_name} />
         <TabScroll data={data} />
+        <CartList data={scrolldata} />
       </View>
       <View />
     </View>
