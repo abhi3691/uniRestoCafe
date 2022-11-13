@@ -4,9 +4,14 @@ import styles from './styles';
 import * as Animatable from 'react-native-animatable';
 import customColor from '../../../theme/Color';
 import useScrollData from '../../../zustand/scrollData/useScrollData';
+import Animated, {
+  LightSpeedInLeft,
+  LightSpeedInRight,
+  useAnimatedStyle,
+} from 'react-native-reanimated';
 const SingleTab = ({menu_category, activeIndex, index, onPress, data}) => {
-  //ref
-  const slideRef = React.useRef();
+  //state
+  const [isNext, setIsNext] = React.useState(true);
 
   //zstand
   const setScrolldata = useScrollData(state => state.setScrolldata);
@@ -20,16 +25,18 @@ const SingleTab = ({menu_category, activeIndex, index, onPress, data}) => {
     setScrolldata(data);
     onPress();
     if (activeIndex < index) {
-      setTimeout(() => {
-        slideRef?.current?.slideInLeft();
-      }, 100);
-    }
-    if (activeIndex > index) {
-      setTimeout(() => {
-        slideRef?.current?.slideInRight();
-      }, 100);
+      setIsNext(true);
+    } else {
+      setIsNext(false);
     }
   };
+
+  //anination style
+  const Rbar = useAnimatedStyle(() => {
+    return {
+      backgroundColor: customColor.red,
+    };
+  });
 
   return (
     <TouchableHighlight
@@ -47,12 +54,9 @@ const SingleTab = ({menu_category, activeIndex, index, onPress, data}) => {
           {menu_category}
         </Text>
         {activeIndex == index && (
-          <Animatable.View
-            ref={slideRef}
-            style={styles.bar}
-            duration={500}
-            easing="ease-in"
-            useNativeDriver={true}
+          <Animated.View
+            style={[styles.bar, Rbar]}
+            entering={isNext ? LightSpeedInLeft : LightSpeedInRight}
           />
         )}
       </View>

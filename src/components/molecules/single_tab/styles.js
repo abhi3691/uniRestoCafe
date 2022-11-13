@@ -12,7 +12,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   bar: {
-    backgroundColor: customColor.red,
     height: ScreenRatio.width / 100,
     width: ScreenRatio.width / 2.3,
     bottom: -10,
