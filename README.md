@@ -1,6 +1,6 @@
 # uniRestoCafe
 
-##this is a React Native Application sample of resturent menu
+this is a React Native Application sample of resturent menu
 
 
 
